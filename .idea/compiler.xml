@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Multi" />
         <module name="Thread" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaConcurrencyActiveMQ" target="1.5" />
+      <module name="Multi" target="1.5" />
       <module name="Thread" target="1.8" />
     </bytecodeTargetLevel>
   </component>
