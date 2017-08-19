@@ -2,17 +2,17 @@ package conn;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 /**
- * Created by lewis on 2017/8/19.
+ * Created by lewis on 2017/8/20.
  *
- * 利用notify wait 进行线程通信
+ * 通过CountDownLatch 实现线程通信
  *
  */
-public class ListAdd {
+public class ListAdd2 {
+
     private volatile static List list = new ArrayList();
-
-
 
     public void add(){
         list.add("lewis");
@@ -23,16 +23,14 @@ public class ListAdd {
     }
 
     public static void main(String []args){
-        final Object lock = new Object();
-        final ListAdd listAdd = new ListAdd();
-
+        final CountDownLatch countDownLatch = new CountDownLatch(1);
+        final  ListAdd2 listAdd = new ListAdd2();
         new Thread(new Runnable() {
             public void run() {
-                synchronized (lock){
                     while (true){
                         if (listAdd.size()!=5){
                             try {
-                                lock.wait();
+                                countDownLatch.await();
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
@@ -41,12 +39,10 @@ public class ListAdd {
                         throw new RuntimeException();
                     }
                 }
-            }
         },"t2").start();
 
         new Thread(new Runnable() {
             public void run() {
-                synchronized (lock){
                     for (int i=0;i<10;i++){
                         listAdd.add();
                         System.out.println("当前线程：" + Thread.currentThread().getName() + "添加了一个元素..");
@@ -57,14 +53,10 @@ public class ListAdd {
                         }
                         if(listAdd.size()==5){
                             System.out.println("已经发出通知！！");
-                            lock.notify();
+                            countDownLatch.countDown();
                         }
                     }
                 }
-            }
         },"t1").start();
-
-
     }
-
 }
