@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaConcurrencyActiveMQ.iml" filepath="$PROJECT_DIR$/JavaConcurrencyActiveMQ.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Multi/Multi.iml" filepath="$PROJECT_DIR$/Multi/Multi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multi/Multi_1.iml" filepath="$PROJECT_DIR$/Multi/Multi_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Mutil_2.iml" filepath="$PROJECT_DIR$/Thread/Mutil_2.iml" />
     </modules>
   </component>
 </project>
