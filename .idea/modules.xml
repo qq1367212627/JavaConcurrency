@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/multi1_base/Multi_1.iml" filepath="$PROJECT_DIR$/multi1_base/Multi_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi2_thread/Mutil_2.iml" filepath="$PROJECT_DIR$/multi2_thread/Mutil_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi3_current_util/Mutil_3.iml" filepath="$PROJECT_DIR$/multi3_current_util/Mutil_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi4_pattern/multi4_pattern.iml" filepath="$PROJECT_DIR$/multi4_pattern/multi4_pattern.iml" />
     </modules>
   </component>
 </project>

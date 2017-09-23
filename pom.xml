@@ -12,6 +12,7 @@
         <module>Thread</module>
         <module>Multi</module>
         <module>Mutil_3</module>
+        <module>multi4_pattern</module>
     </modules>
     <dependencies>
         <dependency>
