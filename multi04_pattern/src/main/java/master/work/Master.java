@@ -22,7 +22,6 @@ public class Master {
             this.workers.put(Integer.toString(i),new Thread(worker));
         }
     }
-
     //添加任务
     public void submit(Task task){
        this.workQueue.add(task);

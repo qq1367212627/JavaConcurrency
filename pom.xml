@@ -13,6 +13,7 @@
         <module>Multi</module>
         <module>Mutil_3</module>
         <module>multi4_pattern</module>
+        <module>Multi05_thread_pool</module>
     </modules>
     <dependencies>
         <dependency>
