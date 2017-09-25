@@ -6,10 +6,14 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package indi.lewis;
+package future;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 public class FutureData implements Data{
 
+
+    public static final  int MAX_SIZE = 100;
     private RealData realData;
     private volatile boolean isReady = false;
 

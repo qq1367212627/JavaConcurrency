@@ -6,15 +6,22 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package indi.lewis;
+public class Test {
 
-public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        FutureClient fc = new FutureClient();
-        Data data =  fc.getRequest("请求参数");
-        System.out.println(" 请求发送成功");
-        System.out.println("做其他事情。。");
-        String result = data.getRequest();
-        System.out.println(result);
+    public static void main(String[] args){
+        point:for(int i = 0;i<10;i++){
+            System.out.println(i);
+            if(i==5){
+                continue point;
+            }
+        }
+
+        point:for(int i = 0;i<10;i++){
+            System.out.println(i);
+            if(i==5){
+                break point;
+            }
+        }
+
     }
 }

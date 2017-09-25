@@ -6,8 +6,17 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package indi.lewis;
+package future;
 
-public interface Data {
-    String getRequest();
+public class FutureClient{
+    public Data getRequest(final String queryStr) {
+        final  FutureData fd = new FutureData();
+        new  Thread(new Runnable() {
+            public void run() {
+                RealData rd = new RealData(queryStr);
+                fd.setRealData(rd);
+            }
+        }).start();
+        return fd;
+    }
 }
