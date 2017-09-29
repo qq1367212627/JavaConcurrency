@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Multi" />
         <module name="Multi05_thread_pool" />
+        <module name="multi06_" />
         <module name="multi4_pattern" />
         <module name="Multi_1" />
         <module name="Mutil_2" />
@@ -15,15 +16,14 @@
         <module name="Thread" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaConcurrencyActiveMQ" target="1.5" />
-      <module name="Multi" target="1.5" />
-      <module name="Multi05_thread_pool" target="1.5" />
-      <module name="multi4_pattern" target="1.5" />
-      <module name="Multi_1" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="JavaConcurrencyActiveMQ" target="1.8" />
+      <module name="Multi05_thread_pool" target="1.8" />
+      <module name="multi06_" target="1.8" />
+      <module name="multi4_pattern" target="1.8" />
+      <module name="Multi_1" target="1.8" />
       <module name="Mutil_2" target="1.8" />
-      <module name="Mutil_3" target="1.5" />
-      <module name="Thread" target="1.8" />
+      <module name="Mutil_3" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

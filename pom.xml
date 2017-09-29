@@ -14,6 +14,7 @@
         <module>Mutil_3</module>
         <module>multi4_pattern</module>
         <module>Multi05_thread_pool</module>
+        <module>multi06_</module>
     </modules>
     <dependencies>
         <dependency>
