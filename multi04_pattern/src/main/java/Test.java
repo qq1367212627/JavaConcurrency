@@ -10,18 +10,20 @@ public class Test {
 
     public static void main(String[] args){
         point:for(int i = 0;i<10;i++){
-            System.out.println(i);
-            if(i==5){
-                continue point;
+            for(int  j = 0;j<10;j++){
+                System.out.printf("continue %d %d\n",i,j);
+                if(i==0) {
+                    continue point;
+                }
             }
         }
-
         point:for(int i = 0;i<10;i++){
-            System.out.println(i);
-            if(i==5){
-                break point;
+            for(int  j = 0;j<10;j++){
+                System.out.printf("break %d %d\n",i,j);
+                if(i==0) {
+                    break point;
+                }
             }
         }
-
     }
 }

@@ -27,7 +27,5 @@ public class Main {
         p1.stop();
         p2.stop();
         p3.stop();
-
-
     }
 }
