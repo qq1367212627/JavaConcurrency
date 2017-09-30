@@ -15,6 +15,7 @@
         <module>multi4_pattern</module>
         <module>Multi05_thread_pool</module>
         <module>multi06_</module>
+        <module>multi07_disruptor</module>
     </modules>
     <dependencies>
         <dependency>
