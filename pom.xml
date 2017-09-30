@@ -16,6 +16,7 @@
         <module>Multi05_thread_pool</module>
         <module>multi06_</module>
         <module>multi07_disruptor</module>
+        <module>multi08_socket</module>
     </modules>
     <dependencies>
         <dependency>

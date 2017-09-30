@@ -10,6 +10,7 @@
         <module name="Multi05_thread_pool" />
         <module name="multi06_" />
         <module name="multi07_disruptor" />
+        <module name="multi08_socket" />
         <module name="multi4_pattern" />
         <module name="Multi_1" />
         <module name="Mutil_2" />
@@ -18,10 +19,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="JavaConcurrencyActiveMQ" target="1.5" />
-      <module name="Multi05_thread_pool" target="1.5" />
-      <module name="multi06_" target="1.5" />
-      <module name="multi07_disruptor" target="1.5" />
+      <module name="JavaConcurrencyActiveMQ" target="1.8" />
+      <module name="Multi05_thread_pool" target="1.8" />
+      <module name="multi06_" target="1.8" />
+      <module name="multi07_disruptor" target="1.8" />
+      <module name="multi08_socket" target="1.8" />
       <module name="multi4_pattern" target="1.8" />
       <module name="Multi_1" target="1.8" />
       <module name="Mutil_2" target="1.8" />
