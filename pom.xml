@@ -17,6 +17,7 @@
         <module>multi06_</module>
         <module>multi07_disruptor</module>
         <module>multi08_socket</module>
+        <module>multi09_netty</module>
     </modules>
     <dependencies>
         <dependency>
