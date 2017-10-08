@@ -23,9 +23,9 @@ public class Client {
         handler(new ChannelInitializer<SocketChannel>() {//
             @Override
             protected void initChannel(SocketChannel socketChannel) throws Exception {
-                ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());
+                ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());//特殊标识字符，表示一个消息包的结束
                 socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1<<10,buf));
-                socketChannel.pipeline().addLast(new StringDecoder());
+                socketChannel.pipeline().addLast(new StringDecoder());//字符解码器
                 socketChannel.pipeline().addLast(new ClientHandler());
 
             }
