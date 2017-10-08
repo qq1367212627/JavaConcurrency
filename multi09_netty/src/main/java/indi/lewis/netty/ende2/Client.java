@@ -1,5 +1,5 @@
 
-package indi.lewis.netty.ende1;
+package indi.lewis.netty.ende2;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
@@ -11,6 +11,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 
 public class Client {
@@ -23,16 +24,15 @@ public class Client {
         handler(new ChannelInitializer<SocketChannel>() {//
             @Override
             protected void initChannel(SocketChannel socketChannel) throws Exception {
-                ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());//特殊标识字符，表示一个消息包的结束
-                socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1<<10,buf));//自定义分隔符
+                socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(5));//自定义长度
                 socketChannel.pipeline().addLast(new StringDecoder());//字符解码器
                 socketChannel.pipeline().addLast(new ClientHandler());
 
             }
         });
         ChannelFuture cf = boot.connect("127.0.0.1",8000).sync();//
-        cf.channel().writeAndFlush(Unpooled.copiedBuffer("aaaaabbbbb".getBytes()));//通过通道读写数据，从管道冲刷到服务端
-        cf.channel().writeAndFlush(Unpooled.copiedBuffer("cccccd".getBytes()));//
+        cf.channel().writeAndFlush(Unpooled.copiedBuffer("777777$_".getBytes()));//通过通道读写数据，从管道冲刷到服务端
+        cf.channel().writeAndFlush(Unpooled.copiedBuffer("8885555$_".getBytes()));//
         cf.channel().closeFuture().sync();//阻塞
         group.shutdownGracefully();//
     }
