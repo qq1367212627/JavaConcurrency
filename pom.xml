@@ -18,6 +18,7 @@
         <module>multi07_disruptor</module>
         <module>multi08_socket</module>
         <module>multi09_netty</module>
+        <module>jvm</module>
     </modules>
     <dependencies>
         <dependency>

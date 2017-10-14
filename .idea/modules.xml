@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/multi01_base/Multi_1.iml" filepath="$PROJECT_DIR$/multi01_base/Multi_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi02_thread/Mutil_2.iml" filepath="$PROJECT_DIR$/multi02_thread/Mutil_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi03_current_util/Mutil_3.iml" filepath="$PROJECT_DIR$/multi03_current_util/Mutil_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi06_concurrent_util/multi06_.iml" filepath="$PROJECT_DIR$/multi06_concurrent_util/multi06_.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi07_disruptor/multi07_disruptor.iml" filepath="$PROJECT_DIR$/multi07_disruptor/multi07_disruptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi08_socket/multi08_socket.iml" filepath="$PROJECT_DIR$/multi08_socket/multi08_socket.iml" />
